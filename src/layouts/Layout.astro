@@ -1,0 +1,35 @@
+---
+import '../styles/tailwind.css';
+---
+
+
+<!doctype html>
+<html lang="en" class="bg-gray-50 text-gray-900">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<!-- Top Navigation -->
+    <nav class="bg-blue-600 text-white shadow-md">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="/" class="text-2xl font-bold">MyAstroSite</a>
+
+          <!-- Nav Links -->
+          <div class="flex space-x-6">
+            <a href="/" class="hover:text-gray-200 transition">Home</a>
+            <a href="/about" class="hover:text-gray-200 transition">About</a>
+            <a href="/contact" class="hover:text-gray-200 transition">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+		<main class="max-w-6xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+	</body>
+</html>
