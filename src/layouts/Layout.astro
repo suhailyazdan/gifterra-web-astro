@@ -11,24 +11,29 @@ import '../styles/tailwind.css';
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<!-- Top Navigation -->
-    <nav class="bg-blue-600 text-white shadow-md">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
-          <!-- Logo -->
-          <a href="/" class="text-2xl font-bold">MyAstroSite</a>
+    <div class="bg-[#E8F6F8]">
+      <!-- Top Navigation -->
+      <nav class="container mx-auto text-white shadow-md">
+        <div class="mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="h-full flex items-center text-2xl font-bold">
+              <img src="/images/gifterra-logo.svg" class="h-[80%]" alt="Gifterra logo" />
+            </a>
 
-          <!-- Nav Links -->
-          <div class="flex space-x-6">
-            <a href="/" class="hover:text-gray-200 transition">Home</a>
-            <a href="/about" class="hover:text-gray-200 transition">About</a>
-            <a href="/contact" class="hover:text-gray-200 transition">Contact</a>
+            <!-- Nav Links -->
+            <div class="flex space-x-6">
+              <a href="/" class="text-[#02A4B3] hover:text-[#015961] hover:underline transition">About</a>
+              <a href="/about" class="text-[#02A4B3] hover:text-[#015961] hover:underline transition">Featured Packs</a>
+              <a href="/contact" class="text-[#02A4B3] hover:text-[#015961] hover:underline transition">Gallery</a>
+              <a href="/contact" class="text-[#02A4B3] hover:text-[#015961] hover:underline transition">Testimonials</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
-		<main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="mx-auto">
       <slot />
     </main>
 	</body>
