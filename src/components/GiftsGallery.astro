@@ -1,0 +1,70 @@
+---
+// Gifts Gallery
+
+const images = [
+  "/images/other-images/Slice 5.jpg",
+  "/images/other-images/Slice 6.jpg",
+  "/images/other-images/Slice 7.jpg",
+  "/images/other-images/Slice 8.jpg",
+  "/images/other-images/Slice 12.jpg",
+  "/images/other-images/Slice 13.jpg",
+  "/images/other-images/Slice 10.jpg",
+  "/images/other-images/Slice 11.jpg",
+  "/images/other-images/Slice 12.jpg"
+]
+
+---
+
+<section class="bg-[#D1EEF1] py-16">
+    <div class="container mx-auto px-5">
+       <div class="grid grid-cols-12 gap-5 items-center mb-20">
+        <div class="col-start-3 col-span-8">
+            <h1 class="text-4xl text-center font-bold text-[#018692]">Gifts Gallery</h1>
+
+            <h3 class="text-xl text-center text-[#018692]">
+              Explore our curated collection of beautifully packaged gifts, perfect for every occasion. Each gift pack is thoughtfully designed to impress and ready to delight your loved ones.
+            </h3>
+        </div>        
+      </div>
+
+      <div class="max-w-8xl mx-auto">
+        <div class="w-full grid grid-cols-12 grid-rows-12 gap-5 aspect-[16/9]">
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-12 overflow-hidden">
+            <img src={images[0]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-6 overflow-hidden">
+            <img src={images[1]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-6 overflow-hidden">
+            <img src={images[2]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-3 overflow-hidden">
+            <img src={images[3]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-3 overflow-hidden">
+            <img src={images[4]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-2 row-span-6 overflow-hidden">
+            <img src={images[5]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-4 row-span-6 overflow-hidden">
+            <img src={images[6]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-3 overflow-hidden">
+            <img src={images[7]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+
+          <div class="bg-gray-400 rounded-2xl col-span-3 row-span-3 overflow-hidden">
+            <img src={images[8]} alt="Image 1" class="w-full h-full object-cover"  />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
