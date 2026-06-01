@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import AboutUs from "../components/About.astro";
 import PopularPacks from "../components/PopularPacks.astro"
 import GiftsGallery from '../components/GiftsGallery.astro';
+import Testimonials from '../components/Testimonials.astro';
 
 ---
 
@@ -14,13 +15,14 @@ import GiftsGallery from '../components/GiftsGallery.astro';
     </div>
   </div>
 
-	<h1 class="text-4xl font-bold mb-4 text-red-800">Welcome to My sdfsdfAstro Website</h1>
+	<h1 class="text-4xl font-bold mb-4 text-red-800 text-center">Welcome to My sdfsdfAstro Website</h1>
 
-  <p class="text-lg text-gray-700">
+  <p class="text-lg text-gray-700 text-center mb-8">
     This is the Home page. Built with Astro and Tailwind CSS.
   </p>
 
   <AboutUs />
   <PopularPacks />
+  <Testimonials />
   <GiftsGallery />
 </Layout>
