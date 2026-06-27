@@ -1,11 +1,60 @@
 ---
-
+const testimonials = [
+  {
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Sarah L",
+    review:
+      "The gift box was absolutely stunning and my friend loved it! The quality of the products and the presentation were top-notch. Will definitely order again."
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Sarah L",
+    review:
+      "The gift box was absolutely stunning and my friend loved it! The quality of the products and the presentation were top-notch. Will definitely order again."
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Sarah L",
+    review:
+      "The gift box was absolutely stunning and my friend loved it! The quality of the products and the presentation were top-notch. Will definitely order again."
+  }
+];
 
 ---
 
 <section class="bg-gray-100 py-16">
-    <div class="max-w-6xl mx-auto px-5 ">
-        <h1 class="text-3xl font-semibold text-center text-[#018692] mb-4">What Our Customers Say</h1>
-        This is the section for testimonials. You can add your testimonials here to showcase feedback from your customers or clients.
+    <div class="max-w-7xl mx-auto px-5 ">
+        <!-- Heading -->
+        <h1 class="text-4xl font-semibold text-center text-[#018692] mb-20">What Our Customers Say</h1>
+            
+        <div class="container mx-auto px-5">
+            <!-- Cards -->
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                {testimonials.map((item) => (
+                    <div class="relative rounded-lg bg-white px-8 pt-22 pb-12 text-center shadow-sm">
+                        <!-- Avatar -->
+                        <div class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                            <div class="flex h-30 w-30 items-center justify-center rounded-full bg-white shadow-md">
+                            <img
+                                src={item.image}
+                                alt={item.name}
+                                class="h-25 w-25 rounded-full object-cover"
+                            />
+                            </div>
+                        </div>
+
+                        <!-- Review -->
+                        <p class="text-md leading-7 text-cyan-600">
+                            "{item.review}"
+                        </p>
+
+                        <!-- Name -->
+                        <h3 class="mt-6 text-xl font-semibold text-cyan-700">
+                            -{item.name}
+                        </h3>
+                    </div>
+                ))}
+            </div>
+        </div>
     </div>
 </section>
