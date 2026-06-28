@@ -14,7 +14,7 @@
     "astro-icon": "^1.1.5"
   },
   "devDependencies": {
-    "@astrojs/cloudflare": "^14.0.1",
+    "@astrojs/cloudflare": "^13.7.0",
     "@iconify-json/simple-icons": "^1.2.87",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
