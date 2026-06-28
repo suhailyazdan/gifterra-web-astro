@@ -2,21 +2,24 @@
 const testimonials = [
   {
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    name: "Sarah L",
+    name: "Daniel Carter",
+    Company: "Marketing Manager, BrightWave Solutions",
     review:
-      "The gift box was absolutely stunning and my friend loved it! The quality of the products and the presentation were top-notch. Will definitely order again."
+      "Gifterra exceeded our expectations. The gift box looked elegant, arrived on time, and left a lasting impression on our client. The attention to detail and premium packaging truly set them apart."
   },
   {
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Sarah L",
+    name: "Emily Thompson",
+    Company: "HR Director, StellarTech Inc.",
     review:
-      "The gift box was absolutely stunning and my friend loved it! The quality of the products and the presentation were top-notch. Will definitely order again."
+      "We ordered personalized gift hampers for our employee appreciation event, and everyone loved them. The quality, presentation, and customization were exceptional. Gifterra made the entire process effortless."
   },
   {
     image: "https://randomuser.me/api/portraits/women/68.jpg",
-    name: "Sarah L",
+    name: "Sophia Williams",
+    Company: "CEO, GreenLeaf Enterprises",
     review:
-      "The gift box was absolutely stunning and my friend loved it! The quality of the products and the presentation were top-notch. Will definitely order again."
+      "Finding thoughtful corporate gifts used to be challenging until we discovered Gifterra. Every gift was beautifully curated, professionally packaged, and delivered exactly as promised. We'll definitely be ordering again."
   }
 ];
 
@@ -50,7 +53,8 @@ const testimonials = [
 
                         <!-- Name -->
                         <h3 class="mt-6 text-xl font-semibold text-cyan-700">
-                            -{item.name}
+                            - {item.name}
+                            - <div class="text-sm font-bold text-cyan-700">{item.Company}</div>
                         </h3>
                     </div>
                 ))}
